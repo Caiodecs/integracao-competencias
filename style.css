@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+
+
+head {
+    width: max-content;
+    max-width: max-content;
+ 
+}
+
+:root {
+    --primeira-cor: #146071;
+    --segunda-cor: #fff;
+    --terceira-cor: #151515;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    width: 100%;
+    background-color: var(--segunda-cor);
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+/*INICIO CABEÇALHO*/
+
+navbar {
+    max-width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 100%;
+    max-height: 120px;
+    position: fixed;
+    background-color: var(--segunda-cor);
+    z-index: 10;
+    color: var(--primeira-cor);
+}
+
+.cabeçalho-link {
+    display: flex;
+    gap: 30px;
+    font-size: 30px;
+    color: var(--primeira-cor);
+    padding-left: 2%;
+
+}
+
+.cabeçalho-link a{
+    color: var(--primeira-cor);
+}
+
+#logo {
+    scale: 45%;
+    padding-left: 3500px;
+    padding-bottom: 50px;
+}
+
+button {
+    color: var(--primeira-cor);
+    font-size: 15px;
+    background: transparent;
+    border: solid 1px;
+    border-radius: 25px;
+    width: 180px;
+    margin-top: -5px;
+    padding-left: 200px;
+
+
+}
+
+
+/*FIM CABEÇALHO*/
+
+
+/*INICIO HOME*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding-top: 100px;
+
+}
+
+.container-text {
+    padding: 0 0 0 40px;
+    font-size: large;
+}
+
+.text h3 {
+    color: black;
+    font-size: 50px;
+}
+
+.text h2 {
+    color: black;
+    font-size: 58px
+}
+
+.text h1 {
+    color: black;
+    font-size: 70px;
+}
+
+.text span {
+    color: var(--primeira-cor);
+}
+
+.container-image {
+    scale: 85%;
+}
+
+.btn {
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    color: var(--terceira-cor);
+    border: 1px solid var(--terceira-cor);
+    border-radius: 50px;
+    font-size: 35px;
+    line-height: 35px;
+    padding: 10px 20px;
+    margin-top: 0;
+    margin-left: 85px;
+    gap: 25px;
+}
+
+
+.btn-container {
+    width: 280px;
+    background-color: transparent;
+    color: var(--terceira-cor);
+    padding: 5px 10px 5px 0;
+    transition: all 400ms ease;
+    position: relative;
+    height: auto;
+
+}
+
+.btn-container i {
+    color: black;
+    width: 10%;
+    height: fit-content;
+}
+
+/*FIM HOME*/
+
+
+/* INICIO CARDÁPIO*/
+.cardapio {
+    color: #eee;
+    background-color: var(--primeira-cor);
+    max-height: 100%;
+}
+
+.cardapio-container {
+    max-height: 95%;
+    width: 100%;
+    height: 100%;
+}
+
+.doces {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    gap: 15px;
+}
+
+.item {
+    background-color: var(--terceira-cor);
+}
+
+.img-cardapio {
+    width: 100%;
+    height: 23rem;
+    border-bottom-left-radius: 4rem;
+    background: #eee;
+}
+
+.img-cardapio img {
+    height: 120%;
+    width: 100%;
+    object-fit: cover;
+    padding: 5rem;
+}
+
+.content {
+    background: var(--terceira-cor);
+    color: var(--segunda-cor);
+    padding: 2rem;
+
+}
+
+.sobre {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--terceira-cor);
+}
+
+#img-sobre {
+    width: 500px;
+    max-height: 80vh;
+    position: relative;
+    top: 60px;
+    border-radius: 25px 25px 0 0;
+    margin: 50px;
+
+}
+
+.txt-sobre h1 {
+    color: var(--segunda-cor);
+    font-size: 6rem;
+    padding-bottom: 50px;
+
+}
+
+.txt-sobre p {
+    color: var(--segunda-cor);
+    font-size: 3rem;
+
+}
+
+/* FIM CARDÁPIO*/
+
+
+/* INICIO FOOTER*/
+
+footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+   
+    background-color: var(--primeira-cor);
+    color: var(--segunda-cor);
+    font-size: 20px;
+
+}
+
+footer a{
+    text-align: center;
+    color: var(--segunda-cor);
+}
+
+/* FIM FOOTER*/
