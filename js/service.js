@@ -1,6 +1,6 @@
 //importar o arquivo que tem os metodos de exceptions
 import { handleErrors } from "./exception.js";
-var URL = 'http://localhost:3000/jogos';
+var URL = 'http://localhost:3000/clientes';
 
 export const getAllCliente = async () => {
     try {

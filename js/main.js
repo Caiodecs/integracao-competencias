@@ -5,47 +5,68 @@ window.onload = () => {
     loadCliente();
 };
 const loadCliente = () => {
-    const dataContainer = document.getElementById('data-container');
-        getAllCliente().then(resp =>{
+    // pegar o elemento no arquivo index.html com o id="tBody"
+    let tBody = document.querySelector('#tBody');
+    
+    getAllCliente().then(resp =>{
         resp.forEach(cliente => {
-            const clienteElement = 
-                document.createElement('div');
-                clienteElement.innerHTML = 
-`<strong>${cliente.nome}</strong><p>${cliente.preco}</p>`;
-             dataContainer.appendChild(clienteElement);
+            // criar um elemento <tr> para colocar dentro de <tbody>
+            let tr = document.createElement("tr");
+
+            // criar elementos <td> para serem colocados dentro de <tr>
+            let tdCod = document.createElement("td");
+            let tdNome = document.createElement("td");
+            let tdEmail = document.createElement("td");
+            let tdTelefone = document.createElement("td");
+            let tdBotao = document.createElement("td");
+            
+            // adicionar os valores um a um que vierem do service
+            tdCod.textContent = cliente.id;
+            tdNome.textContent = cliente.nome;
+            tdEmail.textContent = cliente.email;
+            tdTelefone.textContent = cliente.telefone;
+            tdBotao.innerHTML = `<button class="btn btn-danger" onclick="remover(this)" >Remover</button>`
+            
+            
+            tr.appendChild(tdCod);
+            tr.appendChild(tdNome);
+            tr.appendChild(tdEmail);
+            tr.appendChild(tdTelefone);
+            tr.appendChild(tdBotao);
+
+            tBody.appendChild(tr);
         });
     })
 };
 
-document.getElementById('btnCreate').addEventListener('click', ()=> {
 
-    const jogo = {
-        "nome": "The legend of Zelda",
-        "img": "https://codetheworld.io/wp-content/uploads/2023/12/Dark-Souls.png",
-        "preco": 100
+document.getElementById('btnCreate').addEventListener('click', () => {
+
+    const cliente = {
+        "nome": "Caio",
+        "email": "caio@aluno",
+        "telefone": 3006743453434
     };
-    creatCliente(jogo);
+    creatCliente(cliente);
 });
 
 document.getElementById('btnDelete')
-.addEventListener('click', ()=> {
-const jogo = {
-    "nome": "The legend of Zelda 2",
-    "img": "https://codetheworld.io/wp-content/uploads/2023/12/Dark-Souls.png",
-    "preco": 300,
-    "id": 3
-  };
-  deleteCliente(jogo);
-});
+    .addEventListener('click', () => {
+        const cliente = {
+            "id": 3
+
+        };
+        deleteCliente(cliente);
+    });
 
 document.getElementById('btnUpdate')
-.addEventListener('click', ()=>{
-    const jogo = {
-        "nome": "The legend of Zelda 2",
-        "img": "https://codetheworld.io/wp-content/uploads/2023/12/Dark-Souls.png",
-        "preco": 450,
-        "id": 3
-      };
+    .addEventListener('click', () => {
+        const cliente = {
+            "nome": "Caiodecs",
+            "email": "caio@aluno",
+            "telefone": 3006743453434,
+            "id": 3
+        };
 
-      updateCliente(jogo)
-});
+        updateCliente(cliente)
+    });
