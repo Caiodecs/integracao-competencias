@@ -1,28 +1,10 @@
 {
   "clientes": [
     {
-      "id": 1,
-      "nome": "Caiodecs",
+      "nome": "caiodecs",
       "email": "caio@aluno",
-      "telefone": 3006743453434
-    },
-    {
-      "id": 2,
-      "nome": "Gabi",
-      "email": "gabi@aluno",
-      "telefone": 3006743453434
-    },
-    {
-      "nome": "Caio",
-      "email": "caio@aluno",
-      "telefone": 3006743453434,
-      "id": 4
-    },
-    {
-      "nome": "Caio",
-      "email": "caio@aluno",
-      "telefone": 3006743453434,
-      "id": 5
+      "telefone": "16516516",
+      "id": 1
     }
   ]
 }

@@ -35,7 +35,10 @@ section {
 
 /*INICIO CABEÇALHO*/
 
+
 navbar {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
     max-width: 100%;
     display: flex;
     justify-content: right;
@@ -47,6 +50,10 @@ navbar {
     position: fixed;
     background-color: var(--segunda-cor);
     z-index: 10;
+    color: var(--primeira-cor);
+}
+
+.fa-phone::before{
     color: var(--primeira-cor);
 }
 
@@ -70,17 +77,18 @@ navbar {
 }
 
 button {
-    color: var(--primeira-cor);
-    font-size: 15px;
+    font-size: 50px;
     background: transparent;
     border: solid 1px;
     border-radius: 25px;
-    width: 180px;
-    margin-top: -5px;
-    padding-left: 200px;
-
-
+    width: 65%;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
+
+
 
 
 /*FIM CABEÇALHO*/
@@ -144,9 +152,10 @@ button {
 
 
 .btn-container {
+    border-color: var(--primeira-cor);
     width: 280px;
     background-color: transparent;
-    color: var(--terceira-cor);
+    color: var(--primeira-cor);
     padding: 5px 10px 5px 0;
     transition: all 400ms ease;
     position: relative;
@@ -163,15 +172,27 @@ button {
 /*FIM HOME*/
 
 /*INICIO FORM*/
+
+#btnCreate{
+color: var(--primeira-cor);
+padding-top: 10px;
+
+}
+
+input{
+    font-size: 50px;
+}
+
+.table{
+    border-color: var(--primeira-cor);
+}
 #table {
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: relative;
-    padding-top: 100px;
     padding: 0 0 0 40px;
-    font-size: large;
-    color: black;
+    color: var(--primeira-cor);
     font-size: 50px;
 }
 
@@ -181,6 +202,27 @@ position: relative;
 color: var(--primeira-cor);
 align-items: center;
 padding-left: 40px;
+
+}
+
+#edit {
+    display: flex;
+    color: blueviolet;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 35px;
+}
+
+#remover {
+    display: flex;
+    color: red;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 35px;
 
 }
 /*FIM FORM*/

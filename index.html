@@ -10,31 +10,30 @@
     <link rel="shortcut icon" href="img\logoAzulTransp.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://kit.fontawesome.com/3dc5d6e0b0.js" crossorigin="anonymous"></script>
-
-    
-    
 </head>
 
 <body>
-    <navbar>
-        <div class="logo">
-            <img src="img/logoAzulTransp.png" alt="CHOCODECS" id="logo">
-        </div> 
-        <div class="cabeçalho-link">
-            <li>
-                
-                <a href="#home">Home</a>
-            </li>
-            <li>
-                <a href="#cardapio">Cardápio</a>
-            </li>
-            <li>
-                <a href="#sobre">Sobre</a>
-            </li>
-            <a href="#sociais" class="btn btn-container"><i class="fa-solid fa-phone"></i>Entre em  contato</a>
-        </div>
-       
-    </navbar>
+    <header>
+        <navbar>
+            <div class="logo">
+                <img src="img/logoAzulTransp.png" alt="CHOCODECS" id="logo">
+            </div>
+            <div class="cabeçalho-link">
+                <li>
+
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#cardapio">Cardápio</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <a href="#sociais" class="btn btn-container"><i class="fa-solid fa-phone"></i>Entre em contato</a>
+            </div>
+
+        </navbar>
+    </header>
 
     <section id="home">
         <div class="container">
@@ -56,110 +55,100 @@
 
 
 
-   
-<header>
+
+    <br>
 
     <div id="cliente">
         <h1>Seja um cliente cadastrado e ganhe ofertas especiais!</h1>
     </div>
-        
-    
-</header>
-<section id="table">
-    <form method="POST">
 
-        
-        <div class="mb-3">
-            <label for="nome">Nome</label>
-            <input id="nome" type="text" placeholder="insira o seu nome" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="insira o seu email" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="telefone">Telefone</label>
-            <input id="telefone" type="number" placeholder="insira o numero de telefone" required>
-        </div>
-
-
-    <button id="btnCreate">Create</button>
     <br>
-    <button id="btnUpdate">Update</button>
+
+    <section id="table">
+        <form>
+
+
+            <div class="mb-3">
+                <label for="nome">Nome</label>
+                <br>
+                <input id="nome" type="text" placeholder="insira o seu nome" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email">Email</label>
+                <br>
+                <input id="email" type="email" placeholder="insira o seu email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="telefone">Telefone</label>
+                <br>
+                <input id="telefone" type="number" placeholder="insira o numero de telefone" required>
+            </div>
+            <br>
+            <button id="btnCreate">Create/Update</button>
+            <br>
+
+
+        </form>
+        <hr>
+
+        <table border="1" class="table table-bordered">
+            <thead>
+                <tr id="0">
+                    <th>cod</th>
+                    <th>nome</th>
+                    <th>email</th>
+                    <th>telefone</th>
+                    <th>editar</th>
+                    <th>remover</th>
+                </tr>
+            </thead>
+
+            <tbody id="tBody">
+
+            </tbody>
+
+        </table>
+
+    </section>
     <br>
-    <button id="btnDelete">Delete</button>
-    <br>
-    
-    <div id="data-container"></div>
-    
-
-    </form>
-    <hr>
-
-    <table border="1">
-        <thead>
-            <tr id="0">
-                <th>cod</th>
-                <th>nome</th>
-                <th>email</th>
-                <th>telefone</th>
-                <th>acao</th>
-            </tr>
-        </thead>
-        
-        <tbody id="tBody">
-
-        </tbody>
-       
-    </table>
 
 
+    <footer>
+        <div class="sociais" id="sociais">
+            <div class="footer-content">
+                <h2>Entre em Contato</h2>
+                <p><i class="fa fa-map-marker"></i> Rua do Restaurante, 1234 - Cidade</p>
+                <p><i class="fa fa-phone"></i> (21) 1234-5678</p>
+                <p><i class="fa fa-envelope"></i> nome@seurestaurante.com</p>
+            </div>
+            <div class="footer-section social">
+                <h2>Nos Siga</h2>
 
+                <a href="https://www.facebook.com/caiodecs" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                    Facebook
+                </a>
 
+                <a href="https://www.instagram.com/caiodecs" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                    Instagram
+                </a>
 
+                <a href="https://api.whatsapp.com/send?phone=5521997120987" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    whatsapp
+                </a>
 
-
-
-</section>
-
-
-
-<footer>
-    <div class="sociais" id="sociais">
-        <div class="footer-content">
-            <h2>Entre em Contato</h2>
-            <p><i class="fa fa-map-marker"></i> Rua do Restaurante, 1234 - Cidade</p>
-            <p><i class="fa fa-phone"></i> (21) 1234-5678</p>
-            <p><i class="fa fa-envelope"></i> nome@seurestaurante.com</p>
+            </div>
         </div>
-        <div class="footer-section social">
-            <h2>Nos Siga</h2>
-
-            <a href="https://www.facebook.com/caiodecs" target="_blank">
-                <i class="fa fa-facebook"></i>
-            Facebook
-            </a>
-
-            <a href="https://www.instagram.com/caiodecs" target="_blank">
-                <i class="fa fa-instagram"></i>
-                Instagram
-            </a>
-
-            <a href="https://api.whatsapp.com/send?phone=5521997120987" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-                whatsapp
-            </a>
-
         </div>
-    </div>
-    </div>
-</footer>
+    </footer>
 
-<script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/main.js"></script>
 
 
 </body>
-</html>
 
+</html>
